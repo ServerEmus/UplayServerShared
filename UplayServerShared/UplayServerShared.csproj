@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	  <Authors>ServerEmus;Detanup01</Authors>
+	  <Company>ServerEmus</Company>
+	  <GenerateDocumentationFile>False</GenerateDocumentationFile>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <RepositoryUrl>https://github.com/ServerEmus/UplayServerShared</RepositoryUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageProjectUrl>https://github.com/ServerEmus/UplayServerShared</PackageProjectUrl>
+	  <Copyright>$(Company)</Copyright>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <AssemblyName>ServerEmus.UplayServerShared</AssemblyName>
+	  <Version>0.0.1-alpha.1</Version>
+	  <FileVersion>0.0.1</FileVersion>
+	  <AssemblyVersion>$(FileVersion)</AssemblyVersion>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="ServerEmus.ServerShared" Version="0.0.3-alpha.3" />
+    <PackageReference Include="ServerEmus.UplayShared" Version="0.0.1" />
+    <PackageReference Include="Uplay-Protobufs" Version="161.1.11646" />
+  </ItemGroup>
+
+</Project>
